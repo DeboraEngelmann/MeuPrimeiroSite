@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meu1ºSite</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<!--- Menu -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="https://fit.faccat.br/~a1150937/meu1site/"><img src="meupsitelogo.png"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="https://fit.faccat.br/ead/">TI Faccat<span class="sr-only">(current)</span></a></li>
+	        <li><a href="http://getbootstrap.com/">Ir para o Bootstrap</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Links Úteis <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="https://www.google.com.br/">Google</a></li>
+	            <li><a href="https://github.com/">Github</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+<!--- MAIN -->
+
+
+	<main>
+
+
+		<!--- CAROUSEL  -->
+
+	    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" align="center">
+	        <!-- Indicators -->
+	        <ol class="carousel-indicators">
+	            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        </ol>
+
+	        <!-- Wrapper for slides -->
+	        <div class="carousel-inner" role="listbox">
+	            <div class="item active">
+	                <img src="faccat.png" alt="Imagem 1">
+	                <div class="carousel-caption">
+	                    ...
+	                </div>
+	            </div>
+	            <div class="item">
+	                <img src="meupsite.png" alt="Imagem 2">
+	                <div class="carousel-caption">
+	                    ...
+	                </div>
+	            </div>
+	            <div class="item">
+	                <img src="bootstrap.png" alt="Imagem 3">
+	                <div class="carousel-caption">
+	                    ...
+	                </div>
+	            </div>
+	            ...
+	        </div>
+
+
+
+	        <!-- Controls -->
+	        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	            <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	            <span class="sr-only">Next</span>
+	        </a>
+	    </div>
+
+
+		<!---   TABS   -->
+				
+		<div class="container">
+		   <div id="content">
+		       <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+		           <li class="active"><a href="#home" data-toggle="tab">Desenvolvimento</a></li>
+		           <li><a href="#profile" data-toggle="tab">Referências</a></li>
+		       </ul>
+		       <div id="my-tab-content" class="tab-content">
+		           <div class="tab-pane active" id="home">
+		               <p>Caros amigos, o Meu1ºSite foi desenvolvido utilizando o Bootstrap que tem como objetivo tornar mais fácil o desenvolvimento de interface (front-end) para páginas web. Ele disponibiliza padrões para os elementos HTML mais usados, além de elementos personalizados com o usado de elementos e classes css padrões..</p>
+		           </div>
+		           <div class="tab-pane" id="profile">
+		               <p>Para o desenvolvimento do Meu1ºSite foram utilizados informações e dados disponiveis, entre outros, nos seguintes sites</p>
+		               <ul>
+		               	<li>http://getbootstrap.com/</li>
+		               	<li>https://github.com/</li>
+		               	<li>http://www.w3schools.com/</li>
+		               	<li>http://stackoverflow.com/</li>
+		               	<li>http://www.devmedia.com.br/</li>
+		               	<li>https://www.google.com.br/</li>
+		           </div>
+		       </div>
+		   </div>
+		</div>
+
+
+	    <!--- MODAL -->
+
+
+	    <!-- Button trigger modal -->
+	    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="modal">
+	        Meu1ºModal
+	    </button>
+
+	    <!-- Modal -->
+	    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title" id="myModalLabel">Meu1ºModal</h4>
+	                </div>
+	                <div class="modal-body">
+
+	                    <!--- COLAPSE -->
+
+	                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	                        <div class="panel panel-default">
+	                            <div class="panel-heading" role="tab" id="headingOne">
+	                                <h4 class="panel-title">
+	                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	                                        Input Text
+	                                    </a>
+	                                </h4>
+	                            </div>
+	                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+	                                <div class="panel-body">
+	                                    <div class="input-group">
+	                                        <span class="input-group-addon" id="basic-addon1"></span>
+	                                        <input type="text" class="form-control" placeholder="Input Text" aria-describedby="basic-addon1">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="panel panel-default">
+	                            <div class="panel-heading" role="tab" id="headingTwo">
+	                                <h4 class="panel-title">
+	                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	                                        Select
+	                                    </a>
+	                                </h4>
+	                            </div>
+	                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	                                <div class="panel-body">
+	                                    <div class="form-group">
+	                                        <label for="sel1">Select list:</label>
+	                                        <select class="form-control" id="sel1">
+	                                            <option>1</option>
+	                                            <option>2</option>
+	                                            <option>3</option>
+	                                            <option>4</option>
+	                                        </select>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="panel panel-default">
+	                            <div class="panel-heading" role="tab" id="headingThree">
+	                                <h4 class="panel-title">
+	                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	                                        Text Area
+	                                    </a>
+	                                </h4>
+	                            </div>
+	                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	                                <div class="panel-body">
+	                                    <div class="form-group">
+	                                        <label for="comment">Comentários:</label>
+	                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="panel panel-default">
+	                            <div class="panel-heading" role="tab" id="headingFour">
+	                                <h4 class="panel-title">
+	                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+	                                        Combobox
+	                                    </a>
+	                                </h4>
+	                            </div>
+	                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+	                                <div class="panel-body">
+	                                    <select class="combobox">
+	                                        <option></option>
+	                                        <option value="PA">1º Opção</option>
+	                                        <option value="CT">2º Opção</option>
+	                                        <option value="NY">3º Opção</option>
+	                                        <option value="MD">4º Opção</option>
+	                                        <option value="VA">5º Opção</option>
+	                                    </select>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal" id="cancelar">Cancelar</button>
+	                    <button type="button" class="btn btn-primary">Salvar</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+site contendo
+
+-navbar
+--dropdown
+----link1
+----link2
+
+--carousel
+--img
+
+-tabs (2 tabs)
+--texto 1
+--texto 2
+
+-modal
+--form
+----inputs grid 6
+----collapse
+------input text
+------select
+------textarea
+------combobox
+----botao salvar
+----botao cancelar
